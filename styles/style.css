@@ -32,12 +32,29 @@ nav li a {
   text-decoration: none;
 }
 .nav-home {
-  color: rgba(37, 36, 50, 1);
+  color: rgb(37, 36, 50);
+  font-family: Inter;
+  font-size: 16px;
   font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
 }
 .nav-shop {
-  color: rgba(137, 135, 161, 1);
-  font-weight: 600;
+  color: rgb(137, 135, 161);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+.cart {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 /* banner styles */
@@ -59,4 +76,23 @@ nav li a {
 .banner-description {
   font-size: 22px;
   color: rgba(0, 0, 0, 0.5);
+}
+/* media query for mobile */
+@media screen and (max-width: 576px) {
+  .nav-home,
+  .nav-shop {
+    display: none;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .banner-left {
+    padding: 15px;
+  }
+  .banner-title {
+    font-size: 24px;
+  }
 }
