@@ -199,4 +199,24 @@ nav li a {
   .flower-price {
     font-size: 16px;
   }
+  /* for plants lover */
+  .plants-lover {
+    flex-direction: column;
+  }
+  .plants-lover-left,
+  .plants-lover-right {
+    margin: 0 20px;
+  }
+  .plants-lover-left img {
+    width: 100%;
+  }
+  .plants-lover-title {
+    font-size: 24px;
+  }
+  .plants-lover-description {
+    font-size: 14px;
+  }
+  .trusted-badge {
+    display: none;
+  }
 }
