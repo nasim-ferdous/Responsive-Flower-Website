@@ -128,6 +128,7 @@ nav li a {
   display: flex;
   gap: 60px;
   position: relative;
+  margin-bottom: 130px;
 }
 .plants-lover-right {
   margin-top: 38px;
@@ -151,8 +152,97 @@ nav li a {
   height: 286px;
   left: 350px;
   top: -150px;
-  box-shadow: -4px 10px 4px 0px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
+/* latest deals */
+.latest-deal {
+  margin-bottom: 120px;
+}
+
+.latest-deal-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  color: rgba(233, 90, 8, 1);
+}
+.deals {
+  color: rgba(0, 0, 0, 1);
+}
+.latest-deal-description {
+  text-align: center;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 120px;
+}
+.latest-deal-card-container {
+  display: flex;
+  gap: 28px;
+}
+.latest-deal-card-container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.latest-deal-card {
+  position: relative;
+}
+.latest-deal-card div {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 90px;
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.latest-deal-card .right {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 170px;
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+.latest-deal-card .right a {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.latest-deal-card div a {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.latest-deal-card img {
+  border-radius: 10px;
+  filter: brightness(60%);
+}
+
+/* join section styles */
+.join {
+  background-image: url(../assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.join-title {
+  font-weight: 700;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+.join-input {
+  display: flex;
+  justify-content: center;
+}
+/* footer section styles */
+
 /* media query for mobile */
 @media screen and (max-width: 576px) {
   /* navbar */
@@ -199,6 +289,9 @@ nav li a {
   .flower-price {
     font-size: 16px;
   }
+  .card-btn {
+    padding: 10px 30px;
+  }
   /* for plants lover */
   .plants-lover {
     flex-direction: column;
@@ -218,5 +311,29 @@ nav li a {
   }
   .trusted-badge {
     display: none;
+  }
+  /* for latest deal
+   */
+  .latest-deal-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .latest-deal-description {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+  .latest-deal-card-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .latest-deal-card-img {
+    width: 100%;
+  }
+  .latest-deal-card .right {
+    left: 90px;
+    font-size: 20px;
+  }
+  .latest-deal-card .right a {
+    font-size: 16px;
   }
 }
