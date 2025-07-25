@@ -71,6 +71,9 @@ nav li a {
   color: rgba(0, 0, 0, 0.5);
 }
 /* section our plants */
+.our-plants {
+  margin-bottom: 150px;
+}
 .our-plants-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -120,7 +123,36 @@ nav li a {
   padding: 20px 50px;
   border: none;
 }
-
+/* plants lover section */
+.plants-lover {
+  display: flex;
+  gap: 60px;
+  position: relative;
+}
+.plants-lover-right {
+  margin-top: 38px;
+}
+.plants-lover-title {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.plants-lover-description {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 30px;
+}
+.plants-lover-description li {
+  margin-bottom: 20px;
+}
+.trusted-badge {
+  position: absolute;
+  width: 286px;
+  height: 286px;
+  left: 350px;
+  top: -150px;
+  box-shadow: -4px 10px 4px 0px rgba(0, 0, 0, 0.25);
+}
 /* media query for mobile */
 @media screen and (max-width: 576px) {
   /* navbar */
